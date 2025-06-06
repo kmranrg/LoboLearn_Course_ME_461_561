@@ -1,0 +1,13 @@
+{
+  "uuid": "195d0223-2f09-49c3-9b33-58e399023b2a",
+  "title": "HW01 | Extra Credit Option",
+  "topic": "Default",
+  "type": "v3",
+  "singleVariant": true,
+  "gradingMethod": "External",
+  "externalGradingOptions": {
+    "enabled": true,
+    "image": "prairielearn/grader-python",
+    "timeout": 20
+  }
+}

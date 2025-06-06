@@ -1,0 +1,184 @@
+<pl-question-panel>
+    <p>
+        The matrices \( \mathbf{A} \) and \( \mathbf{B} \) are shown below.
+        Compute missing block of \(\mathbf{B}\cdot\mathbf{A}\) in the input field.
+    </p>
+
+    <div style="display: flex; flex-direction: column; align-items: right; gap: 20px; margin-bottom: 50px; width:70%">
+        <div style="display: flex; flex-direction: row; justify-content: right; gap: 20px; align-items: flex-end;">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+                <span>\(\mathbf{A}\)</span>
+                <div style="display: flex; flex-direction: column; gap: 0;">
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                    border: 1px solid black; font-size: 20px;">
+                            {{params.A00}}
+                        </div>
+                        <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                    border: 1px solid black; font-size: 20px;">
+                            {{params.A01}}
+                        </div>
+                        <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                    border: 1px solid black; font-size: 20px;">
+                            {{params.A02}}
+                        </div>
+                        <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                    border: 1px solid black; font-size: 20px;">
+                            {{params.A03}}
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                    border: 1px solid black; font-size: 20px;">
+                            {{params.A10}}
+                        </div>
+                        <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                border: 1px solid black; font-size: 20px;">
+                            {{params.A11}}
+                        </div>
+                        <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                    border: 1px solid black; font-size: 20px;">
+                            {{params.A12}}
+                        </div>
+                        <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                    border: 1px solid black; font-size: 20px;">
+                            {{params.A13}}
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div style="display: flex; flex-direction: row; justify-content: right; gap: 30px; align-items: flex-end;">
+            <div style="display: flex; align-items: center; gap: 30px;">
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 24px;">
+                <span>\(\mathbf{B}\)</span>
+                <div style="display: flex; flex-direction: column; gap: 0;">
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                    border: 1px solid black; font-size: 20px;">
+                            {{params.B00}}
+                        </div>
+                        <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                    border: 1px solid black; font-size: 20px;">
+                            {{params.B01}}
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                    border: 1px solid black; font-size: 20px;">
+                            {{params.B10}}
+                        </div>
+                        <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                border: 1px solid black; font-size: 20px;">
+                            {{params.B11}}
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                    border: 1px solid black; font-size: 20px;">
+                            {{params.B20}}
+                        </div>
+                        <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                border: 1px solid black; font-size: 20px;">
+                            {{params.B21}}
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                    border: 1px solid black; font-size: 20px;">
+                            {{params.B30}}
+                        </div>
+                        <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                border: 1px solid black; font-size: 20px;">
+                            {{params.B31}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+                    
+                    <div style="display: flex; flex-direction: column;  align-items: center; gap: 0;">
+                        <div style="display: flex; flex-direction: row; gap: 0;">
+                            <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                    border: 1px solid black; font-size: 20px;">
+                                {{params.BA00}}
+                            </div>
+                            <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                    border: 1px solid black; font-size: 20px;">
+                                {{params.BA01}}
+                            </div>
+                            <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                    border: 1px solid black; font-size: 20px;">
+                                {{params.BA02}}
+                            </div>
+                            <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                    border: 1px solid black; font-size: 20px;">
+                                {{params.BA03}}
+                            </div>
+                        </div>
+                        <div style="display: flex; flex-direction: row; gap: 0;">
+                            <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                border: 1px solid black; font-size: 20px;">
+                                {{params.BA10}}
+                            </div>
+                            <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                border: 1px solid black; font-size: 20px;">
+                                {{params.BA11}}
+                            </div>
+                            <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                border: 1px solid black; font-size: 20px;">
+                                {{params.BA12}}
+                            </div>
+                            <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                border: 1px solid black; font-size: 20px;">
+                                {{params.BA13}}
+                            </div>
+                        </div>
+                        <div style="display: flex; flex-direction: row; gap: 0;">
+                            <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                border: 1px solid black; font-size: 20px;">
+                                {{params.BA20}}
+                            </div>
+                            <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                border: 1px solid black; font-size: 20px;">
+                                {{params.BA21}}
+                            </div>
+                            <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                border: 1px solid black; background-color: #fbfcdd;"></div>
+                            <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                border: 1px solid black; font-size: 20px;">
+                                {{params.BA23}}
+                            </div>
+                        </div>
+                        <div style="display: flex; flex-direction: row; gap: 0;">
+                            <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                border: 1px solid black; font-size: 20px;">
+                                {{params.BA30}}
+                            </div>
+                            <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                border: 1px solid black; font-size: 20px;">
+                                {{params.BA31}}
+                            </div>
+                            <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                border: 1px solid black; font-size: 20px;">
+                                {{params.BA32}}
+                            </div>
+                            <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                border: 1px solid black; font-size: 20px;">
+                                {{params.BA33}}
+                            </div>
+                        </div>
+                        <span>\(\mathbf{B}\cdot\mathbf{A}\)</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</pl-question-panel>
+
+<pl-number-input answers-name="answer" label="Missing component of \( \ \mathbf{B}\cdot\mathbf{A} \):"
+    placeholder=""></pl-number-input>

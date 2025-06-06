@@ -1,0 +1,20 @@
+{
+  "uuid": "d515f062-10ab-45db-a092-5b35ec1ceea5",
+  "type": "Homework",
+  "title": "Worksheet 01",
+  "set": "Homework",
+  "number": "1",
+  "allowAccess": [{ "uids": ["kmranrg@unm.edu"] }],
+  "zones": [
+    {
+      "title": "Worksheet 01",
+      "questions": [
+        { "id": "W01Q01", "points": 10 },
+        { "id": "W01Q02", "points": 10 },
+        { "id": "W01Q03", "points": 10 },
+        { "id": "W01Q04", "points": 10 },
+        { "id": "W01Q05", "points": 10 }
+      ]
+    }
+  ]
+}

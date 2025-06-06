@@ -1,0 +1,16 @@
+{
+    "uuid": "d2235397-67f6-4ce4-ae05-59013aaf8210",
+    "type": "Homework",
+    "title": "Homework 01",
+    "set": "Homework",
+    "number": "1",
+    "allowAccess": [{ "uids": ["test@unm.edu"] }],
+    "zones": [
+      {
+        "title": "Homework 01",
+        "questions": [
+          { "id": "HW01Q01", "points": 10 }
+        ]
+      }
+    ]
+}

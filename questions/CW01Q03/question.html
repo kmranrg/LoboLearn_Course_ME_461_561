@@ -1,0 +1,38 @@
+<pl-question-panel>
+    <p>
+        The vector \( \mathbf{b} \) and the dot product \( \mathbf{a} \cdot \mathbf{b} \) are shown below.
+        Compute \( \mathbf{a} \) in the input field.
+    </p>
+    
+    <div style="display: flex; flex-direction: column; align-items: right; gap: 20px; margin-bottom: 50px; width:50%">
+        <div style="display: flex; justify-content: right; gap: 20px;">
+            
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <span>\( \mathbf{a} \)</span>
+                <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                            border: 1px solid black; background-color: #fbfcdd;"></div>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: right; gap: 20px;">
+            
+            <div style="display: flex; flex-direction: row; align-items: center; margin-bottom: 24px; gap: 10px;">
+                <span>\( \mathbf{b} \)</span>
+                <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                            border: 1px solid black; font-size: 20px;">
+                    {{params.b}}        
+                </div>
+            </div>
+            
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                
+                <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                            border: 1px solid black; font-size: 20px;">
+                    {{params.a_dot_b}}
+                </div>
+                <span>\( \mathbf{a} \cdot \mathbf{b} \)</span>
+            </div>
+        </div>
+    </div>
+</pl-question-panel>
+
+<pl-number-input answers-name="a" label="\( \mathbf{a} = \)" placeholder=""></pl-number-input>

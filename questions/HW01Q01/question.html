@@ -1,0 +1,42 @@
+<pl-question-panel>
+  <h4>Evil Insurance Company️</h4>
+
+  <p>
+    Implement <code>evaluate_claim(gender, age)</code> following these rules:
+  </p>
+  <ul>
+    <li>Reject if <strong>male</strong> and age 51–65</li>
+    <li>Reject if <strong>female</strong> and age 55–70</li>
+    <li>Accept if <strong>male</strong> and age 41–50</li>
+    <li>Return <em>Need&nbsp;more&nbsp;info</em> if age 25–40 (any gender)</li>
+    <li>Reject all other cases</li>
+  </ul>
+
+  <p>
+    <strong>Package requirement:</strong> your solution must <code>import numpy</code>
+    <em>or</em> <code>import torch</code> and use it in your code.
+  </p>
+
+  <!-- Variables to expose for the autograder -->
+  <pl-external-grader-variables params-name="names_from_user">
+    <pl-variable name="evaluate_claim" type="python function">
+      Function that returns "Accept", "Reject", or "Need more info"
+    </pl-variable>
+  </pl-external-grader-variables>
+  <pl-external-grader-variables params-name="names_for_user" empty="true"></pl-external-grader-variables>
+
+  <!-- In-browser editor -->
+  <pl-file-editor file-name="user_code.py"
+                  ace-mode="ace/mode/python"
+                  source-file-name="initial_code.py">
+  </pl-file-editor>
+
+  <p class="mt-2">
+    After editing, click <strong>Submit</strong> to run the autograder.
+  </p>
+</pl-question-panel>
+
+<pl-submission-panel>
+  <pl-external-grader-results></pl-external-grader-results>
+  <pl-file-preview></pl-file-preview>
+</pl-submission-panel>

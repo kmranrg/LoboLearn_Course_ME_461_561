@@ -1,0 +1,17 @@
+<!-- question.html -->
+
+<pl-question-panel>
+  <p>Identify the type of machine learning used in the following scenario.</p>
+
+  <p><strong>Scenario:</strong> {{params.scenario}}</p>
+  
+  <pl-figure file-name="{{params.image}}" directory="clientFilesQuestion" width="450"></pl-figure>
+
+  <pl-multiple-choice answers-name="mlType" fixed-order="true">
+    <pl-answer correct="{{params.is_SL}}">Supervised Learning</pl-answer>
+    <pl-answer correct="{{params.is_UL}}">Unsupervised Learning</pl-answer>
+    <pl-answer correct="{{params.is_RL}}">Reinforcement Learning</pl-answer>
+  </pl-multiple-choice>
+</pl-question-panel>
+
+<pl-submission-panel></pl-submission-panel>

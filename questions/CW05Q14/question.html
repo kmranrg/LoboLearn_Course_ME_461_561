@@ -1,0 +1,336 @@
+<pl-question-panel>
+    <p>
+        Input \( \mathbf{X} \), weight \(\mathbf{W}\) and bias \(\textbf{b}\) are shown below.
+        Identify the activation function.
+    </p>
+    
+    <div style="display: flex; flex-direction: column; align-items:center">
+        <div style="display: flex; flex-direction: row; align-items: flex-end; gap: 40px; margin-bottom: 35px;">
+            
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 34px;">
+                <span>\(\mathbf{W} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textbf{b} \)</span>
+                <div style="display: flex; flex-direction: column; gap: 0;">
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1.7px 1px 0 1.7px;
+                            border-style: solid solid none solid;
+                            border-color: red black transparent red;
+                            font-size: 20px;">
+                            {{params.Wb00}}
+                        </div>
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1.7px 1px 0 0;
+                            border-style: solid solid none none;
+                            border-color: red black transparent transparent;
+                            font-size: 20px; ">
+                            {{params.Wb01}}
+                        </div>
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1.7px 1.7px 0 0;
+                            border-style: solid solid none none;
+                            border-color: red red transparent transparent;
+                            font-size: 20px; 
+                            background-color: rgb(233, 235, 236);">
+                            {{params.Wb02}}
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1px 1px 0 1.7px;
+                            border-style: solid solid none solid;
+                            border-color: black black transparent red;
+                            font-size: 20px;">
+                            {{params.Wb10}}
+                        </div>
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1px 1px 0 0;
+                            border-style: solid solid none none;
+                            border-color: black black transparent transparent;
+                            font-size: 20px; ">
+                            {{params.Wb11}}
+                        </div>
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1px 1.7px 0 0;
+                            border-style: solid solid none none;
+                            border-color: black red transparent transparent;
+                            font-size: 20px; 
+                            background-color: rgb(233, 235, 236);">
+                            {{params.Wb12}}
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1px 1px 1.7px 1.7px;
+                            border-style: solid solid solid solid;
+                            border-color: black black red red;
+                            font-size: 20px;">
+                            {{params.Wb20}}
+                        </div>
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1px 1px 1.7px 0;
+                            border-style: solid solid solid none;
+                            border-color: black black red transparent;
+                            font-size: 20px; ">
+                            {{params.Wb21}}
+                        </div>
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1px 1.7px 1.7px 0;
+                            border-style: solid solid solid none;
+                            border-color: black red red transparent;
+                            font-size: 20px; 
+                            background-color: rgb(233, 235, 236);">
+                            {{params.Wb22}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
+                
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+                    <span>\(\mathbf{X}\)</span>
+                    <div style="display: flex; flex-direction: column; gap: 0;">
+                        <div style="display: flex; flex-direction: row; gap: 0;">
+                            <div style="
+                                width: 50px; 
+                                height: 50px; 
+                                display: flex; 
+                                justify-content: center; 
+                                align-items: center;
+                                border-width: 1px 1px 1px 1px;
+                                border-style: solid solid solid solid;
+                                border-color: black black black black; 
+                                font-size: 20px;">
+                                {{params.X00}}
+                            </div>
+                        </div>
+                        <div style="display: flex; flex-direction: row; gap: 0;">
+                            <div style="
+                                width: 50px; 
+                                height: 50px; 
+                                display: flex; 
+                                justify-content: center; 
+                                align-items: center;
+                                border-width: 0 1px 1px 1px;
+                                border-style: solid solid solid solid;
+                                border-color: black black black black; 
+                                font-size: 20px;">
+                                {{params.X10}}
+                            </div>
+                        </div>
+                        <div style="display: flex; flex-direction: row; gap: 0;">
+                            <div style="
+                                width: 50px; 
+                                height: 50px; 
+                                display: flex; 
+                                justify-content: center; 
+                                align-items: center; 
+                                font-size: 17px;">
+                                {{params.X20}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 34px;">
+                    
+                    <div style="display: flex; flex-direction: column; gap: 0;">
+                        <div style="display: flex; flex-direction: row; gap: 0;">
+                            <div style="
+                                width: 50px; 
+                                height: 50px; 
+                                display: flex; 
+                                justify-content: center; 
+                                align-items: center;
+                                border-width: 1px 1px 1px 1px;
+                                border-style: solid solid solid solid;
+                                border-color: black black black black; 
+                                font-size: 20px;">
+                                {{params.H00}}
+                            </div>
+                        </div>
+                        <div style="display: flex; flex-direction: row; gap: 0;">
+                            <div style="
+                                width: 50px; 
+                                height: 50px; 
+                                display: flex; 
+                                justify-content: center; 
+                                align-items: center;
+                                border-width: 0 1px 0 1px;
+                                border-style: solid solid none solid;
+                                border-color: black black transparent black; 
+                                font-size: 20px;">
+                                {{params.H10}}
+                            </div>
+                        </div>
+                        <div style="display: flex; flex-direction: row; gap: 0;">
+                            <div style="
+                                width: 50px; 
+                                height: 50px; 
+                                display: flex; 
+                                justify-content: center; 
+                                align-items: center;
+                                border-width: 1px 1px 1px 1px;
+                                border-style: solid solid solid solid;
+                                border-color: black black black black; 
+                                font-size: 20px;">
+                                {{params.H20}}
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 34px;">
+                <div style="display: flex; flex-direction: column; gap: 0;">
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 0 0 0 0;
+                            border-style: none none none none;
+                            border-color: transparent transparent transparent transparent;
+                            font-size: 20px;
+                            background-color: #ff8080;">
+                            ?
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 0 0 0 0;
+                            border-style: none none none none;
+                            border-color: transparent transparent transparent transparent;
+                            font-size: 20px;">
+                            \( \approx \)
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 0 0 0 0;
+                            border-style: none none none none;
+                            border-color: transparent transparent transparent transparent;
+                            font-size: 20px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+                <div style="display: flex; flex-direction: column; gap: 0;">
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1px 1px 0 1px;
+                            border-style: solid solid none solid;
+                            border-color: black black transparent black;
+                            font-size: 20px;">
+                            {{params.Y00}}
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1px 1px 0 1px;
+                            border-style: solid solid none solid;
+                            border-color: black black transparent black;
+                            font-size: 20px;">
+                            {{params.Y10}}
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1px 1px 1px 1px;
+                            border-style: solid solid solid solid;
+                            border-color: black black black black;
+                            font-size: 20px;">
+                            {{params.Y20}}
+                        </div>
+                    </div>
+                </div>
+                <span>\(\mathbf{Y}\)</span>
+            </div>
+
+        </div>
+    </div>
+
+    
+</pl-question-panel>
+
+<pl-multiple-choice answers-name="activation1">
+    <pl-answer>ReLU</pl-answer>
+    <pl-answer correct="true">Sigmoid</pl-answer>
+  </pl-multiple-choice>

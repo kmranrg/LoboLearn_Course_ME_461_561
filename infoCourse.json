@@ -1,0 +1,25 @@
+{
+    "uuid": "868a76c9-aae1-4d5a-adae-60185ad6d5df",
+    "name": "ME 461/561",
+    "title": "Machine Learning for Aerospace (ML4A)",
+    "timezone": "America/Mexico_City",
+    "options": {
+        "useNewQuestionRenderer": true
+    },
+    "assessmentSets": [
+        {
+            "abbreviation": "HW",
+            "name": "Homework",
+            "heading": "Homeworks",
+            "color": "green1"
+        },
+        {
+            "abbreviation": "EX",
+            "name": "Exam",
+            "heading": "Exams",
+            "color": "yellow1"
+        }
+    ],
+    "tags": [],
+    "topics": []
+}

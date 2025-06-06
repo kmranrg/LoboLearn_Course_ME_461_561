@@ -1,0 +1,55 @@
+<pl-question-panel>
+    <p>
+    For each statement, choose whether it describes the
+    <em>Task&nbsp;(T)</em>, the <em>Performance measure&nbsp;(P)</em>,
+    or the <em>Experience&nbsp;(E)</em>.
+  </p>
+  
+  <p><strong>Scenario:</strong> {{params.scenario}}</p>
+
+  <table class="table table-bordered w-auto">
+    <tr><th>#</th><th>Statement</th><th>Your&nbsp;label</th></tr>
+
+    <!-- Row 1 -->
+    <tr>
+      <td>1</td>
+      <td>{{params.statement0}}</td>
+      <td>
+        <pl-multiple-choice answers-name="lab0"
+                            display="dropdown" fixed-order="true" >
+          <pl-answer correct="{{params.lab0_is_T}}">Task (T)</pl-answer>
+          <pl-answer correct="{{params.lab0_is_P}}">Performance (P)</pl-answer>
+          <pl-answer correct="{{params.lab0_is_E}}">Experience (E)</pl-answer>
+        </pl-multiple-choice>
+      </td>
+    </tr>
+
+    <!-- Row 2 -->
+    <tr>
+      <td>2</td>
+      <td>{{params.statement1}}</td>
+      <td>
+        <pl-multiple-choice answers-name="lab1"
+                            display="dropdown" fixed-order="true" >
+          <pl-answer correct="{{params.lab1_is_T}}">Task (T)</pl-answer>
+          <pl-answer correct="{{params.lab1_is_P}}">Performance (P)</pl-answer>
+          <pl-answer correct="{{params.lab1_is_E}}">Experience (E)</pl-answer>
+        </pl-multiple-choice>
+      </td>
+    </tr>
+
+    <!-- Row 3 -->
+    <tr>
+      <td>3</td>
+      <td>{{params.statement2}}</td>
+      <td>
+        <pl-multiple-choice answers-name="lab2"
+                            display="dropdown" fixed-order="true" >
+          <pl-answer correct="{{params.lab2_is_T}}">Task (T)</pl-answer>
+          <pl-answer correct="{{params.lab2_is_P}}">Performance (P)</pl-answer>
+          <pl-answer correct="{{params.lab2_is_E}}">Experience (E)</pl-answer>
+        </pl-multiple-choice>
+      </td>
+    </tr>
+  </table>
+</pl-question-panel>

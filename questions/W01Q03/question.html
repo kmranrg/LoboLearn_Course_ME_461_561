@@ -1,0 +1,18 @@
+<pl-question-panel>
+  <h4>Skill&nbsp;or&nbsp;Tool?</h4>
+  <p>The word below is either a <strong>Skill</strong> or a <strong>Tool</strong>
+     needed for Machine&nbsp;Learning. Tick the correct box.</p>
+
+  <table class="table table-bordered w-auto">
+    <tr><th>Word</th><th>Label</th></tr>
+    <tr>
+      <td class="text-center">{{params.word}}</td>
+      <td>
+        <pl-checkbox answers-name="choice" fixed-order="true">
+          <pl-answer correct="{{params.skillAttr}}">Skill</pl-answer>
+          <pl-answer correct="{{params.toolAttr}}">Tool</pl-answer>
+        </pl-checkbox>
+      </td>
+    </tr>
+  </table>
+</pl-question-panel>

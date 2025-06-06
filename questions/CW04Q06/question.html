@@ -1,0 +1,415 @@
+<pl-question-panel>
+    <p>
+        Apply <b>tanh</b> activation function and compute the missing component.
+    </p>
+    
+    <div style="display: flex; flex-direction: column; align-items:center">
+        <div style="display: flex; flex-direction: row; align-items: flex-end; gap: 40px; margin-bottom: 35px;">
+            
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 34px;">
+                <span>\(\mathbf{X} \)</span>
+                <div style="display: flex; flex-direction: column; gap: 0;">
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1.7px 1.7px 0 1.7px;
+                            border-style: solid solid none solid;
+                            border-color: red red transparent red;
+                            font-size: 20px;">
+                            {{params.A00}}
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1px 1.7px 0 1.7px;
+                            border-style: solid solid none solid;
+                            border-color: black red transparent red;
+                            font-size: 20px;">
+                            {{params.A10}}
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1px 1.7px 0 1.7px;
+                            border-style: solid solid none solid;
+                            border-color: black red transparent red;
+                            font-size: 20px;">
+                            {{params.A20}}
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1px 1.7px 0 1.7px;
+                            border-style: solid solid none solid;
+                            border-color: black red transparent red;
+                            font-size: 20px;">
+                            {{params.A30}}
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1px 1.7px 0 1.7px;
+                            border-style: solid solid none solid;
+                            border-color: black red transparent red;
+                            font-size: 20px;">
+                            {{params.A40}}
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1px 1.7px 0 1.7px;
+                            border-style: solid solid none solid;
+                            border-color: black red transparent red;
+                            font-size: 20px;">
+                            {{params.A50}}
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1px 1.7px 0 1.7px;
+                            border-style: solid solid none solid;
+                            border-color: black red transparent red;
+                            font-size: 20px;">
+                            {{params.A60}}
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1px 1.7px 0 1.7px;
+                            border-style: solid solid none solid;
+                            border-color: black red transparent red;
+                            font-size: 20px;">
+                            {{params.A70}}
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1px 1.7px 0 1.7px;
+                            border-style: solid solid none solid;
+                            border-color: black red transparent red;
+                            font-size: 20px;">
+                            {{params.A80}}
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1px 1.7px 1.7px 1.7px;
+                            border-style: solid solid solid solid;
+                            border-color: black red red red;
+                            font-size: 20px;">
+                            {{params.A90}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 34px;">
+                <div style="display: flex; flex-direction: column; gap: 0;">
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 0 0 0 0;
+                            border-style: none none none none;
+                            border-color: transparent transparent transparent transparent;
+                            font-size: 20px;">
+                            
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 0 0 0 0;
+                            border-style: none none none none;
+                            border-color: transparent transparent transparent transparent;
+                            font-size: 20px;">
+                            \( \tanh(x) \)
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 0 0 0 0;
+                            border-style: none none none none;
+                            border-color: transparent transparent transparent transparent;
+                            font-size: 20px;">
+                            \( \approx \)
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 0 0 0 0;
+                            border-style: none none none none;
+                            border-color: transparent transparent transparent transparent;
+                            font-size: 20px;">
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 0 0 0 0;
+                            border-style: none none none none;
+                            border-color: transparent transparent transparent transparent;
+                            font-size: 20px;">
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 0 0 0 0;
+                            border-style: none none none none;
+                            border-color: transparent transparent transparent transparent;
+                            font-size: 20px;">
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 50px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 0 0 0 0;
+                            border-style: none none none none;
+                            border-color: transparent transparent transparent transparent;
+                            font-size: 20px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+                <div style="display: flex; flex-direction: column; gap: 0;">
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 90px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1px 1px 0 1px;
+                            border-style: solid solid none solid;
+                            border-color: black black transparent black;
+                            font-size: 20px;
+                            background-color: #ff8080;">
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 90px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1px 1px 0 1px;
+                            border-style: solid solid none solid;
+                            border-color: black black transparent black;
+                            font-size: 20px;">
+                            {{params.Y10}}
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 90px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1px 1px 0 1px;
+                            border-style: solid solid none solid;
+                            border-color: black black transparent black;
+                            font-size: 20px;">
+                            {{params.Y20}}
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 90px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1px 1px 0 1px;
+                            border-style: solid solid none solid;
+                            border-color: black black transparent black;
+                            font-size: 20px;">
+                            {{params.Y30}}
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 90px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1px 1px 0 1px;
+                            border-style: solid solid none solid;
+                            border-color: black black transparent black;
+                            font-size: 20px;">
+                            {{params.Y40}}
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 90px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1px 1px 0 1px;
+                            border-style: solid solid none solid;
+                            border-color: black black transparent black;
+                            font-size: 20px;">
+                            {{params.Y50}}
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 90px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1px 1px 0 1px;
+                            border-style: solid solid none solid;
+                            border-color: black black transparent black;
+                            font-size: 20px;">
+                            {{params.Y60}}
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 90px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1px 1px 0 1px;
+                            border-style: solid solid none solid;
+                            border-color: black black transparent black;
+                            font-size: 20px;">
+                            {{params.Y70}}
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 90px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1px 1px 0 1px;
+                            border-style: solid solid none solid;
+                            border-color: black black transparent black;
+                            font-size: 20px;">
+                            {{params.Y80}}
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 0;">
+                        <div style="
+                            width: 90px; 
+                            height: 50px; 
+                            display: flex; 
+                            justify-content: center; 
+                            align-items: center; 
+                            border-width: 1px 1px 1px 1px;
+                            border-style: solid solid solid solid;
+                            border-color: black black black black;
+                            font-size: 20px;">
+                            {{params.Y90}}
+                        </div>
+                    </div>
+                </div>
+                <span>\(\mathbf{Y}\)</span>
+            </div>
+
+        </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; align-items:center; margin-bottom: 50px;">
+        <pl-figure file-name="tanh.png" width="550px" directory="clientFilesQuestion"></pl-figure>
+    </div>
+    
+</pl-question-panel>
+
+<pl-number-input
+    answers-name="answer"
+    label="Missing component of\( \ \mathbf{Y} \):"
+    placeholder="">
+</pl-number-input>

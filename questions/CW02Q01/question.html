@@ -1,0 +1,54 @@
+<pl-question-panel>
+    <p>
+        The matrices \( \mathbf{A} \) and \( \mathbf{B} \) are shown below.
+        Compute missing block of \( \mathbf{A} \cdot \mathbf{B} \) in the input field.
+    </p>
+
+    <div style="display: flex; flex-direction: column; align-items: right; gap: 20px; margin-bottom: 50px; width:60%">
+        <div style="display: flex; flex-direction: row; justify-content: right; gap: 20px; align-items: flex-end;">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+                <span>\(\mathbf{B}\)</span>
+                <div style="display: flex; gap: 0;">
+                    <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                border: 1px solid black; font-size: 20px;">
+                        {{params.B00}}
+                    </div>
+                    <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                border: 1px solid black; font-size: 20px;">
+                        {{params.B01}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex; flex-direction: row; justify-content: right; gap: 20px; align-items: flex-end;">
+            <div style="display: flex; align-items: center; gap: 20px;">
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 34px;">
+                    <span>\(\mathbf{A}\)</span>
+                    <div style="display: flex; gap: 0;">
+                        <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                border: 1px solid black; font-size: 20px;">
+                            {{params.A00}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+
+                <div style="display: flex; gap: 0;">
+                    <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                border: 1px solid black; font-size: 20px;">
+                        {{params.AB00}}
+                    </div>
+                    <div style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; 
+                                border: 1px solid black; background-color: #fbfcdd;"></div>
+                </div>
+                <span>\(\mathbf{A}\cdot\mathbf{B}\)</span>
+            </div>
+        </div>
+    </div>
+</pl-question-panel>
+
+<pl-number-input answers-name="answer" label="Missing component of \( \ \mathbf{A}\cdot\mathbf{B} \):"
+    placeholder=""></pl-number-input>
