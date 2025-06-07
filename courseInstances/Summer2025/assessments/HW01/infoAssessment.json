@@ -4,7 +4,7 @@
     "title": "Homework 01",
     "set": "Homework",
     "number": "1",
-    "allowAccess": [{ "uids": ["test@unm.edu"] }],
+    "allowAccess": [{ "uids": ["test@unm.edu", "optimization.estimation@gmail.com", "me@kmranrg.com"], "credit": 100 }],
     "zones": [
       {
         "title": "Homework 01",
