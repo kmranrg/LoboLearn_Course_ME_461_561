@@ -1,0 +1,36 @@
+<pl-question-panel>
+  <h4>Cheapest Ride</h4>
+
+  <p>
+    You must travel across town.  The cost function is
+    \[
+      f = w_1 \,(\text{time in min}) + w_2 \,(\text{money in \$}),
+    \]
+    where <code>w<sub>1</sub> = {{params.w1}}</code> and
+    <code>w<sub>2</sub> = {{params.w2}}</code>.
+  </p>
+
+  <center>
+  <table class="table table-bordered w-auto text-center">
+    <tr class="thead-dark">
+      <th>Transport&nbsp;mode</th><th>Time&nbsp;(min)</th><th>Money&nbsp;(\$)</th>
+    </tr>
+    <tr><td>{{params.mode0}}</td><td>{{params.time0}}</td><td>{{params.money0}}</td></tr>
+    <tr><td>{{params.mode1}}</td><td>{{params.time1}}</td><td>{{params.money1}}</td></tr>
+    <tr><td>{{params.mode2}}</td><td>{{params.time2}}</td><td>{{params.money2}}</td></tr>
+    <tr><td>{{params.mode3}}</td><td>{{params.time3}}</td><td>{{params.money3}}</td></tr>
+  </table>
+  </center>
+
+  <p class="mt-3">
+    <strong>Task:&nbsp;</strong> Compute the <em>smallest</em> value of
+    <code>f</code> across the four modes and enter it below (integer).
+  </p>
+
+  <pl-number-input
+      answers-name="answer"
+      allow-blank="false"
+      size="50"
+      placeholder="Minimum value of f =">
+  </pl-number-input>
+</pl-question-panel>

@@ -1,0 +1,21 @@
+<pl-question-panel>
+  <h4>Critical Point</h4>
+
+  <p>
+    Consider the single‐variable function
+    \[
+      f(x) \;=\; {{params.a}}\,x^2 \;{{params.b_sign}}\; {{params.b_val}}\,x.
+    \]
+  </p>
+
+  <p class="mt-2"><strong>Which of the following is the critical point \(x^*\) of \(f(x)\)?</strong></p>
+
+  <pl-multiple-choice
+      answers-name="critical_point"
+      display="inline"
+      fixed-order="true">
+    {{#params.choices}}
+      <pl-answer correct="{{correct}}">{{x}}</pl-answer>
+    {{/params.choices}}
+  </pl-multiple-choice>
+</pl-question-panel>

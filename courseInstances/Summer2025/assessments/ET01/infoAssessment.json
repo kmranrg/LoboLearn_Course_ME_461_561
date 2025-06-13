@@ -1,0 +1,29 @@
+{
+  "uuid": "d515f062-10ab-45db-a092-5b35ec1ceea5",
+  "type": "Exam",
+  "title": "Exam Template 00",
+  "set": "Exam",
+  "number": "0",
+  "allowAccess": [
+    {
+      "uids": [
+        "kmranrg@unm.edu",
+        "me@kmranrg.com",
+        "2021fc04016@alumni.bits-pilani.ac.in",
+        "optimization.estimation@gmail.com"
+      ]
+    }
+  ],
+  "zones": [
+    {
+      "title": "Worksheet 01",
+      "questions": [
+        { "id": "W01Q01", "autoPoints": [10, 10, 8, 6, 5] },
+        { "id": "W01Q02", "autoPoints": [10, 10, 8, 6, 5] },
+        { "id": "W01Q03", "autoPoints": [10, 10, 8, 6, 5] },
+        { "id": "W01Q04", "autoPoints": [10, 10, 8, 6, 5] },
+        { "id": "W01Q05", "autoPoints": [10, 10, 8, 6, 5] }
+      ]
+    }
+  ]
+}
