@@ -1,0 +1,21 @@
+<pl-question-panel>
+  <h4>Understanding Forward Propagation</h4>
+
+  <p>Consider a neural network with two hidden layers. During forward propagation, the input vector \( x \in \mathbb{R}^3 \) is passed through the following operations:</p>
+
+  <ul>
+    <li>First hidden layer: \( h^{(1)} = W^{(1)} x + b^{(1)} \)</li>
+    <li>Then: \( z^{(1)} = f^{(1)}(h^{(1)}) \)</li>
+    <li>Then: \( h^{(2)} = W^{(2)} z^{(1)} + b^{(2)} \)</li>
+    <li>Then: \( z^{(2)} = f^{(2)}(h^{(2)}) \)</li>
+    <li>Output: \( y = z^{(2)} \)</li>
+  </ul>
+
+  <p>Which of the following best describes the purpose of the activation function \( f^{(1)} \) and \( f^{(2)} \) in this flow?</p>
+
+  <pl-multiple-choice answers-name="forward_activation" display="block" fixed-order="false">
+    {{#params.choices}}
+      <pl-answer correct="{{correct}}">{{{text}}}</pl-answer>
+    {{/params.choices}}
+  </pl-multiple-choice>
+</pl-question-panel>

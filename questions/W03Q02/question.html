@@ -1,0 +1,15 @@
+<pl-question-panel>
+  <h4>Identify the Activation Function</h4>
+
+  <p>Consider the following activation function:</p>
+
+  <p>{{{params.formula}}}</p>
+
+  <p>Which activation function is this?</p>
+
+  <pl-multiple-choice answers-name="act_fn" display="block" fixed-order="false">
+    {{#params.choices}}
+      <pl-answer correct="{{correct}}">{{{text}}}</pl-answer>
+    {{/params.choices}}
+  </pl-multiple-choice>
+</pl-question-panel>

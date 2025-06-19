@@ -1,0 +1,17 @@
+<pl-question-panel>
+  <h4>Steps to Build and Train Your First Neural Network</h4>
+
+  <p>
+    You are given input-output data generated from the equation \( y = |x| + \varepsilon \), where \( \varepsilon \) is small random noise.
+  </p>
+
+  <p>
+    You plan to build a simple neural network with one input, two hidden ReLU units, and one output node. Which of the following sequences best describes what you would do?
+  </p>
+
+  <pl-multiple-choice answers-name="build_train_nn" display="block" fixed-order="false">
+    {{#params.choices}}
+      <pl-answer correct="{{correct}}">{{{text}}}</pl-answer>
+    {{/params.choices}}
+  </pl-multiple-choice>
+</pl-question-panel>
