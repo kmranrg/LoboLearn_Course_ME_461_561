@@ -1,0 +1,24 @@
+<pl-question-panel>
+  <h4>Residual Sum of Squares</h4>
+
+  <p>
+    Consider the following loss function:
+    \[
+      \mathcal{L}(\hat{\beta}_0,\hat{\beta}_1) \;=\; \tfrac12 \sum_{n=1}^N \bigl(y_n - (\hat{\beta}_0 + \hat{\beta}_1 \, x_n)\bigr)^2.
+    \]
+    Setting
+    \(\displaystyle \frac{\partial \mathcal{L}}{\partial \hat{\beta}_0} = 0\)
+    yields which of the following conditions?
+    
+    Hint: \(\hat{y}_n = \hat{\beta}_0 + \hat{\beta}_1 \,  x_n\)
+  </p>
+
+  <pl-multiple-choice
+      answers-name="normal_eq"
+      display="block"
+      fixed-order="false">
+    {{#params.choices}}
+      <pl-answer correct="{{correct}}">{{{text}}}</pl-answer>
+    {{/params.choices}}
+  </pl-multiple-choice>
+</pl-question-panel>

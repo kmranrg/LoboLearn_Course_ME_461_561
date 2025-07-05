@@ -1,0 +1,31 @@
+<pl-question-panel>
+  <h4>Handwritten Digit Recognition</h4>
+
+  <p>
+    Convolutional Neural Networks (CNNs) are commonly used in image classification tasks like recognizing handwritten digits (e.g., MNIST dataset).
+  </p>
+  
+  <p>
+    <pl-figure file-name="handwritten_digits.png" directory="clientFilesQuestion" width="450"></pl-figure>
+  </p>
+
+  <p>
+    In a CNN architecture for classifying digits from images:
+  </p>
+
+  <ul>
+    <li>The input is a 2D grayscale image of a digit (e.g., 28×28 pixels).</li>
+    <li>The first few layers apply <strong>convolutional filters</strong>.</li>
+    <li>Later layers may apply <strong>max pooling</strong>, followed by <strong>fully connected layers</strong>.</li>
+  </ul>
+
+  <p>
+    What is the primary purpose of the <strong>convolutional layers</strong> in this CNN architecture?
+  </p>
+
+  <pl-multiple-choice answers-name="cnn_conv" display="block" fixed-order="false">
+    {{#params.choices}}
+      <pl-answer correct="{{correct}}">{{{text}}}</pl-answer>
+    {{/params.choices}}
+  </pl-multiple-choice>
+</pl-question-panel>

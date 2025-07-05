@@ -1,0 +1,18 @@
+<pl-question-panel>
+  <h4>Which Points Matter Most in an SVM?</h4>
+
+  <p>
+    In a linear Support Vector Machine (SVM) classifier, the optimal hyperplane is chosen to maximize the margin
+    between two classes.
+  </p>
+
+  <p>
+    Which subset of training points uniquely determines the position of this optimal hyperplane?
+  </p>
+
+  <pl-multiple-choice answers-name="svm_points" display="block" fixed-order="false">
+    {{#params.choices}}
+      <pl-answer correct="{{correct}}">{{{text}}}</pl-answer>
+    {{/params.choices}}
+  </pl-multiple-choice>
+</pl-question-panel>

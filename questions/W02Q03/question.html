@@ -1,0 +1,22 @@
+<pl-question-panel>
+  <h4>Second‐Derivative Test</h4>
+
+  <p>
+    Suppose a function \(f: \mathbb{R}\to\mathbb{R}\) is twice continuously differentiable and at a point \(x_0\) you have
+    \[
+      f'(x_0) = 0
+      \quad\text{and}\quad
+      f''(x_0) > 0.
+    \]
+    Which of the following statements is true?
+  </p>
+
+  <pl-multiple-choice
+      answers-name="concept"
+      display="block"
+      fixed-order="false">
+    {{#params.choices}}
+      <pl-answer correct="{{correct}}">{{text}}</pl-answer>
+    {{/params.choices}}
+  </pl-multiple-choice>
+</pl-question-panel>

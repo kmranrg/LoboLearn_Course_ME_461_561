@@ -1,0 +1,20 @@
+<pl-question-panel>
+  <h4>What Makes a Function a Valid SVM Kernel?</h4>
+
+  <p>
+    A kernel function&nbsp;<em>k</em>(<strong>x</strong>, <strong>z</strong>) allows an SVM to compute an
+    inner product in some (possibly very high-dimensional) feature space without
+    explicitly mapping the inputs.  Only certain functions are valid kernels.
+  </p>
+
+  <p>
+    Which of the following statements correctly describes the key mathematical
+    requirement for a function to be used as an SVM kernel?
+  </p>
+
+  <pl-multiple-choice answers-name="kernel_validity" display="block" fixed-order="false">
+    {{#params.choices}}
+      <pl-answer correct="{{correct}}">{{{text}}}</pl-answer>
+    {{/params.choices}}
+  </pl-multiple-choice>
+</pl-question-panel>

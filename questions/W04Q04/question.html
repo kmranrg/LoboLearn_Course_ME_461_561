@@ -1,0 +1,36 @@
+<pl-question-panel>
+  <h4>Understanding the Perceptron Algorithm</h4>
+
+  <p>
+    The Perceptron is one of the earliest and simplest algorithms for binary classification. 
+    It makes predictions using the rule:
+  </p>
+
+  <p style="text-align: center;">
+    \( \hat{y} = \text{sign}(\mathbf{w}^\top \mathbf{x} + b) \)
+  </p>
+
+  <p>
+    where:
+  </p>
+
+  <ul>
+    <li>\( \mathbf{x} \) is the input vector,</li>
+    <li>\( \mathbf{w} \) is the weight vector,</li>
+    <li>\( b \) is the bias.</li>
+  </ul>
+
+  <p>
+    During training, the Perceptron updates its weights when it makes a mistake on a training example.
+  </p>
+
+  <p>
+    What is the main thing the Perceptron is learning from the training data?
+  </p>
+
+  <pl-multiple-choice answers-name="perceptron_goal" display="block" fixed-order="false">
+    {{#params.choices}}
+      <pl-answer correct="{{correct}}">{{{text}}}</pl-answer>
+    {{/params.choices}}
+  </pl-multiple-choice>
+</pl-question-panel>

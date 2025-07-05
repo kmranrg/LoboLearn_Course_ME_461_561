@@ -1,0 +1,35 @@
+<pl-question-panel>
+  <h4>Understanding Logistic Regression</h4>
+
+  <p>
+    Logistic Regression is a linear classification model commonly used for binary classification tasks.
+    It uses the sigmoid function to produce a probability:
+  </p>
+
+  <p style="text-align: center;">
+    \( \hat{p} = \frac{1}{1 + \exp(-(\mathbf{w}^\top \mathbf{x} + b))} \)
+  </p>
+
+  <p>
+    where:
+  </p>
+  <ul>
+    <li>\( \mathbf{x} \) is the input feature vector,</li>
+    <li>\( \mathbf{w} \) is the weight vector,</li>
+    <li>\( b \) is the bias term.</li>
+  </ul>
+
+  <p>
+    The final prediction is typically made by applying a threshold (e.g., 0.5) to \( \hat{p} \).
+  </p>
+
+  <p>
+    Which of the following best describes what logistic regression is learning?
+  </p>
+
+  <pl-multiple-choice answers-name="logistic_regression" display="block" fixed-order="false">
+    {{#params.choices}}
+      <pl-answer correct="{{correct}}">{{{text}}}</pl-answer>
+    {{/params.choices}}
+  </pl-multiple-choice>
+</pl-question-panel>

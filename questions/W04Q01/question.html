@@ -1,0 +1,53 @@
+<pl-question-panel>
+  <h4>Spam Filter: Mission Control Needs You!</h4>
+
+  <p>
+    You are a machine learning engineer at <strong>Aerospace Command Center</strong>. 
+    Your task is to build a lightweight email classifier using the <strong>Perceptron algorithm</strong> 
+    to protect mission-critical inboxes from spam.
+  </p>
+  
+  <p>
+    <pl-figure file-name="cybersecurity-concept-collage-design.png" directory="clientFilesQuestion" width="450"></pl-figure>
+  </p>
+  
+  <p>
+    Each email is transformed into 3 numerical features \( x_1, x_2, x_3 \), based on its content:
+  </p>
+
+  <ul>
+    <li>e.g., number of suspicious links, use of urgent words, length of subject line.</li>
+  </ul>
+
+  <p>The model makes a prediction using this rule:</p>
+
+  <p style="text-align: center;">
+    \( \hat{y} = \text{sign}(w_1 x_1 + w_2 x_2 + w_3 x_3 + b) \)
+  </p>
+
+  <ul>
+    <li>If \( \hat{y} = +1 \), it’s a <strong>legit email</strong>.</li>
+    <li>If \( \hat{y} = -1 \), it's classified as <strong>spam</strong>.</li>
+  </ul>
+
+  <p>
+    For the incoming message:
+  </p>
+  <ul>
+    <li><strong>Feature vector:</strong> \( \mathbf{x} = [{{params.x1}}, {{params.x2}}, {{params.x3}}] \)</li>
+    <li><strong>Weights:</strong> \( \mathbf{w} = [{{params.w1}}, {{params.w2}}, {{params.w3}}] \)</li>
+    <li><strong>Bias:</strong> \( b = {{params.b}} \)</li>
+  </ul>
+
+  <p>
+    What will your spam filter predict? Enter <code>1</code> for a good email, or <code>-1</code> for spam.
+  </p>
+
+  <pl-number-input
+    answers-name="yhat"
+    label="\(\hat{y} \)"
+    allow-blank="false"
+    size="10"
+    placeholder="enter +1 or -1">
+  </pl-number-input>
+</pl-question-panel>

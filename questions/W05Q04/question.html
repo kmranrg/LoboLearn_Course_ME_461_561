@@ -1,0 +1,28 @@
+<pl-question-panel>
+  <h4>The Kernel Trick in SVMs</h4>
+
+  <p>
+    Sometimes training data are not linearly separable in the original input space (left illustration),
+    but become linearly separable after being mapped to a higher-dimensional feature space
+    via a nonlinear mapping&nbsp;\( \phi(\mathbf{x}) \) (right illustration).
+  </p>
+
+  <p>
+    <pl-figure file-name="graph.png" directory="clientFilesQuestion" width="450"></pl-figure>
+  </p>
+
+  <p>
+    In practice, Support Vector Machines avoid computing \( \phi(\mathbf{x}) \) explicitly.  
+    Instead, they use a <em>kernel function</em> \( k(\mathbf{x},\mathbf{z}) \).
+  </p>
+
+  <p>
+    Which statement best describes the purpose of the kernel trick?
+  </p>
+
+  <pl-multiple-choice answers-name="kernel_trick" display="block" fixed-order="false">
+    {{#params.choices}}
+      <pl-answer correct="{{correct}}">{{{text}}}</pl-answer>
+    {{/params.choices}}
+  </pl-multiple-choice>
+</pl-question-panel>

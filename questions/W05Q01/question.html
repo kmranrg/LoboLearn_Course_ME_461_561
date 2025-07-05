@@ -1,0 +1,38 @@
+<pl-question-panel>
+  <h4>Distance to an SVM Hyperplane</h4>
+
+  <p>
+    In a 2-D Support Vector Machine (SVM) classifier, the decision boundary (hyperplane) is
+  </p>
+
+  <p style="text-align:center;">
+    \( \mathbf{w}^{\!\top}\mathbf{x} + b = 0 \)
+  </p>
+
+  <p>
+    The (unsigned) distance from any point \( \mathbf{x}_0 \) to this hyperplane is
+  </p>
+
+  <p style="text-align:center;">
+    \( r = \dfrac{\lvert\,\mathbf{w}^{\!\top}\mathbf{x}_0 + b\,\rvert}{\lVert \mathbf{w}\rVert} \)
+  </p>
+
+  <p>
+    For the hyperplane parameters and point below, calculate the distance \( r \) and round to
+    <strong>3&nbsp;decimal&nbsp;places</strong>.
+  </p>
+
+  <ul>
+    <li>\( \mathbf{w} = [\,{{params.w1}},\;{{params.w2}}\,] \)</li>
+    <li>\( b = {{params.b}} \)</li>
+    <li>\( \mathbf{x}_0 = [\,{{params.x1}},\;{{params.x2}}\,] \)</li>
+  </ul>
+
+  <pl-number-input
+      answers-name="dist"
+      label="\( r \)"
+      allow-blank="false"
+      size="30"
+      placeholder="upto 3 decimal places e.g. 2.343">
+  </pl-number-input>
+</pl-question-panel>
