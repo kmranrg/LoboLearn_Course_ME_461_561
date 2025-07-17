@@ -1,0 +1,25 @@
+<pl-question-panel>
+  <h4>Comparing State‑Value and Action‑Value Functions</h4>
+
+  <p>
+    For a fixed policy&nbsp;\( \pi \) in a finite MDP we define
+    the <em>state‑value function</em>
+    \( V_\pi(s) = \mathbb{E}_\pi\!\bigl[\,G_t \mid S_t = s\bigr] \)
+    and the <em>action‑value function</em>
+    \( q_\pi(s,a) = \mathbb{E}_\pi\!\bigl[\,G_t \mid S_t = s,\;A_t = a\bigr] \).
+  </p>
+
+  <p>
+    Which statement below is <strong>accurate</strong> about the
+    relationship between \( V_\pi \) and \( q_\pi \)?
+  </p>
+
+  <pl-multiple-choice
+      answers-name="vf_relation"
+      display="block"
+      fixed-order="false">
+    {{#params.choices}}
+      <pl-answer correct="{{correct}}">{{{text}}}</pl-answer>
+    {{/params.choices}}
+  </pl-multiple-choice>
+</pl-question-panel>

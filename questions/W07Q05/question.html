@@ -1,0 +1,30 @@
+<pl-question-panel>
+  <h4>The ϵ‑Greedy Choice in the Q‑Learning Demo</h4>
+
+  <p>
+    In the <code>choose_action()</code> function of the 1‑D walk example
+    shown in <a target="_blank" href="https://colab.research.google.com/drive/1P22bpo8oIL51b_g2EalcUT-zRpP25O0n?usp=sharing">video lecture 7.4</a>, an <em>ϵ‑greedy</em> rule is used:
+  </p>
+
+  <pl-code language="python">
+state_actions = q_table.iloc[state, :]
+if (np.random.uniform() &gt; EPSILON) or ((state_actions == 0).all()):
+    action_name = np.random.choice(ACTIONS)  # explore
+else:
+    action_name = state_actions.idxmax()     # exploit
+  </pl-code>
+
+  <p>
+    With <code>EPSILON = 0.9</code> (set near the top of the script),
+    what does this parameter actually control?
+  </p>
+
+  <pl-multiple-choice
+      answers-name="epsilon_role"
+      display="block"
+      fixed-order="false">
+    {{#params.choices}}
+      <pl-answer correct="{{correct}}">{{{text}}}</pl-answer>
+    {{/params.choices}}
+  </pl-multiple-choice>
+</pl-question-panel>

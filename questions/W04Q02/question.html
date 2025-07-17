@@ -1,0 +1,59 @@
+<pl-question-panel>
+  <h4>Rocket Launch Alert System</h4>
+
+  <p>
+    You are part of the <strong>Launch Safety AI Division</strong> at the Aerospace Lab. 
+    Before every rocket launch, three sensor readings are collected. 
+    Your task is to predict whether a launch is likely to be <strong>safe (1)</strong> or <strong>unsafe (0)</strong> 
+    using a <strong>logistic regression model</strong>.
+  </p>
+
+  <p>
+    <pl-figure file-name="rocket_launch.png" directory="clientFilesQuestion" width="250"></pl-figure>
+  </p>
+
+  <p>The model computes:</p>
+
+  <p style="text-align: center;">
+    \( z = w_1 x_1 + w_2 x_2 + w_3 x_3 + b \)
+  </p>
+
+  <p style="text-align: center;">
+    \(\hat{p} = \sigma(z) = \frac{1}{1 + e^{-z}} \)
+  </p>
+  
+  <p style="text-align: center;">
+    \(\hat{y} = f(\hat{p}) \)
+  </p>
+
+  <p>
+    Based on the output probability \(\hat{p}\), the launch is classified as:
+  </p>
+
+  <ul>
+    <li>\( \hat{p} \geq 0.5 \) → \( \hat{y} = 1 \, \) → <strong>Safe Launch</strong></li>
+    <li>\( \hat{p} < 0.5 \) → \( \hat{y} = 0 \, \) → <strong>Unsafe Launch</strong></li>
+  </ul>
+
+  <p>
+    For a new launch test, the onboard computer reports:
+  </p>
+
+  <ul>
+    <li><strong>Sensor input:</strong> \( \mathbf{x} = [{{params.x1}}, {{params.x2}}, {{params.x3}}] \)</li>
+    <li><strong>Weights:</strong> \( \mathbf{w} = [{{params.w1}}, {{params.w2}}, {{params.w3}}] \)</li>
+    <li><strong>Bias:</strong> \( b = {{params.b}} \)</li>
+  </ul>
+
+  <p>
+    What will your model predict? Enter <code>1</code> for a safe launch, or <code>0</code> for an unsafe launch.
+  </p>
+
+  <pl-number-input
+    answers-name="yhat"
+    label="\(\hat{y} \)"
+    allow-blank="false"
+    size="10"
+    placeholder="Enter 1 or 0">
+  </pl-number-input>
+</pl-question-panel>

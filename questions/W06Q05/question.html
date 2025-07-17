@@ -1,0 +1,27 @@
+<pl-question-panel>
+  <h4>Using GPR to Smooth an Altitude Sensor</h4>
+
+  <p>
+    An avionics engineer wants to predict the true (noise-free) altitude of a
+    prototype glider at unmeasured time instants.  She chooses a
+    <strong>Gaussian&nbsp;Process&nbsp;Regressor</strong> with:
+  </p>
+  <ul>
+    <li>zero mean function \(m(x)=0\);</li>
+    <li>a squared-exponential kernel
+        \(k(x,z)=\sigma_f^{2}\exp\!\bigl(-\tfrac12\lVert x-z\rVert^{2}/\ell^{2}\bigr)\);</li>
+    <li>white-noise variance \(\sigma_n^{2}\).</li>
+  </ul>
+
+  <p>
+    Which statement best describes the <em>role</em> of the kernel
+    \(k(\cdot,\cdot)\) in GPR?
+  </p>
+
+  <pl-multiple-choice answers-name="gpr_kernel_role"
+                      display="block" fixed-order="false">
+    {{#params.choices}}
+      <pl-answer correct="{{correct}}">{{{text}}}</pl-answer>
+    {{/params.choices}}
+  </pl-multiple-choice>
+</pl-question-panel>

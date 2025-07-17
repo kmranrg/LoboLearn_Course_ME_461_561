@@ -1,0 +1,23 @@
+<pl-question-panel>
+  <h4>The Role&nbsp;of&nbsp;the&nbsp;Discount&nbsp;Factor&nbsp;\( \gamma \)</h4>
+
+  <p>
+    In most Reinforcement&nbsp;Learning formulations the return is defined as
+    \[
+      G_t \;=\; \sum_{k=0}^{\infty} \gamma^{\,k}\,R_{t+k},
+    \]
+    where the discount factor \( \gamma \) satisfies \( 0 \lt \gamma \lt 1 \).
+  </p>
+
+  <p>
+    What is the <em>primary</em> purpose of including the factor&nbsp;\( \gamma \)
+    in the return?
+  </p>
+
+  <pl-multiple-choice answers-name="gamma_role"
+                      display="block" fixed-order="false">
+    {{#params.choices}}
+      <pl-answer correct="{{correct}}">{{{text}}}</pl-answer>
+    {{/params.choices}}
+  </pl-multiple-choice>
+</pl-question-panel>

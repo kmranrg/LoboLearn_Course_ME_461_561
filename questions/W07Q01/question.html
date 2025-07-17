@@ -1,0 +1,28 @@
+<pl-question-panel>
+  <h4>Goal of an RL Agent</h4>
+
+  <p>
+    In Reinforcement Learning an <em>agent</em> interacts with its
+    <em>environment</em> by repeatedly observing a state&nbsp;\(S_t\),
+    selecting an action&nbsp;\(A_t\), and receiving a scalar
+    reward&nbsp;\(R_t\).
+    The sequence of future rewards is often summarised by the
+    <strong>return</strong>
+    \[
+      G_t \;=\; \sum_{k=0}^{\infty}\gamma^{\;k} \, R_{t+k},
+    \]
+    where \( \gamma \in (0,1) \) is a discount factor.
+  </p>
+
+  <p>
+    Which statement best describes the <em>objective</em> that the agent
+    is trying to achieve in standard RL?
+  </p>
+
+  <pl-multiple-choice answers-name="rl_objective"
+                      display="block" fixed-order="false">
+    {{#params.choices}}
+      <pl-answer correct="{{correct}}">{{{text}}}</pl-answer>
+    {{/params.choices}}
+  </pl-multiple-choice>
+</pl-question-panel>

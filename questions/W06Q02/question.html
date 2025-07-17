@@ -1,0 +1,32 @@
+<pl-question-panel>
+  <h4>Choosing a Stock Pair with Stronger Correlation</h4>
+
+  <p>
+    An investment analyst is comparing two candidate stock pairs to decide
+    which one could serve as a hedge.  Each pair’s daily returns are shown
+    below 1000 historical return samples per pair.
+  </p>
+
+  <p style="text-align:center;">
+    <pl-figure file-name="gp_cov_compare_light.png"
+               directory="clientFilesQuestion"
+               width="600"></pl-figure>
+  </p>
+
+  <p>
+    For hedging, she actually wants the pair whose returns move
+    <em>more tightly together</em>; that is, the pair with the
+    <strong>larger covariance&nbsp;/ stronger linear correlation</strong>.
+  </p>
+
+  <p class="mt-2">
+    Which plot corresponds to the stock pair with the <em>stronger</em>
+    covariance?
+  </p>
+
+  <pl-multiple-choice answers-name="choice" display="block" fixed-order="false">
+    {{#params.choices}}
+      <pl-answer correct="{{correct}}">{{{text}}}</pl-answer>
+    {{/params.choices}}
+  </pl-multiple-choice>
+</pl-question-panel>

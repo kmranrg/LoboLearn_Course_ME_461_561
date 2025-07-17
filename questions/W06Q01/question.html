@@ -1,0 +1,38 @@
+<pl-question-panel>
+  <h4>Selecting the Better Sensor Pair for a Drone Prototype</h4>
+
+  <p>
+    Your team is building a lightweight drone with two on-board sensors that
+    measure <em>fluctuating cross-wind</em> and <em>vertical up-draft</em>.
+    Ideally, these two readings should be <strong>as independent as
+    possible</strong> so that the flight controller can treat them separately.
+  </p>
+
+  <p>
+    During wind-tunnel tests you try <em>two different sensor placements</em>.
+    Each placement produces 1000 sample pairs \((Y_1,Y_2)\).  
+    The results are shown below as two scatter plots.
+  </p>
+
+  <p style="text-align:center;">
+    <pl-figure file-name="gp_cov_compare_light.png"
+               directory="clientFilesQuestion"
+               width="600"></pl-figure>
+  </p>
+
+  <p>
+    A lower off-diagonal covariance (i.e.&nbsp;weaker linear correlation)
+    means <strong>better independence</strong>.
+  </p>
+
+  <p class="mt-2">
+    Which plot corresponds to the placement with the <em>smaller</em>
+    covariance?
+  </p>
+
+  <pl-multiple-choice answers-name="choice" display="block" fixed-order="false">
+    {{#params.choices}}
+      <pl-answer correct="{{correct}}">{{{text}}}</pl-answer>
+    {{/params.choices}}
+  </pl-multiple-choice>
+</pl-question-panel>

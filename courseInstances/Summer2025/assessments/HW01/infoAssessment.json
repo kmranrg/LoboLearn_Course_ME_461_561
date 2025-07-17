@@ -1,16 +1,14 @@
 {
-    "uuid": "d2235397-67f6-4ce4-ae05-59013aaf8210",
-    "type": "Homework",
-    "title": "Homework 01",
-    "set": "Homework",
-    "number": "1",
-    "allowAccess": [{ "uids": ["test@unm.edu", "optimization.estimation@gmail.com", "me@kmranrg.com"], "credit": 100 }],
-    "zones": [
-      {
-        "title": "Homework 01",
-        "questions": [
-          { "id": "HW01Q01", "points": 10 }
-        ]
-      }
-    ]
+  "uuid": "d2235397-67f6-4ce4-ae05-59013aaf8210",
+  "type": "Homework",
+  "title": "Homework 00",
+  "set": "Homework",
+  "number": "0",
+  "allowAccess": [
+    {
+      "uids": ["test@unm.edu", "optimization.estimation@gmail.com", "me@kmranrg.com"],
+      "credit": 100
+    }
+  ],
+  "zones": [{ "title": "Homework 01", "questions": [{ "id": "HW01Q01", "points": 10 }] }]
 }

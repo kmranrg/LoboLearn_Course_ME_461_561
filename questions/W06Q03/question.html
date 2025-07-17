@@ -1,0 +1,31 @@
+<pl-question-panel>
+  <h4>Weather-Sensor Scatter Plots</h4>
+
+  <p>
+    A meteorologist records two daily weather variables—temperature deviation
+    and relative humidity change—for two different climate zones.
+    The 1000 daily measurements for each zone are shown below:
+  </p>
+
+  <p style="text-align:center;">
+    <pl-figure file-name="gp_cov_negpos.png"
+               directory="clientFilesQuestion"
+               width="600"></pl-figure>
+  </p>
+
+  <p>
+    One climate zone (one of the plots) exhibits a strong
+    <strong>negative covariance</strong> between the two variables,
+    while the other exhibits a strong <em>positive</em> covariance.
+  </p>
+
+  <p class="mt-2">
+    Which plot shows the <em>negative</em> covariance?
+  </p>
+
+  <pl-multiple-choice answers-name="choice" display="block" fixed-order="false">
+    {{#params.choices}}
+      <pl-answer correct="{{correct}}">{{{text}}}</pl-answer>
+    {{/params.choices}}
+  </pl-multiple-choice>
+</pl-question-panel>

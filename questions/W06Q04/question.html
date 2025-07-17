@@ -1,0 +1,33 @@
+<pl-question-panel>
+  <h4>Which Climate Zone Shows a <em>Positive</em> Covariance?</h4>
+
+  <p>
+    A climatology team compares two regions by measuring
+    <strong>daily temperature deviation</strong> (\(Y_1\))
+    and <strong>relative-humidity change</strong> (\(Y_2\)).
+    Each region supplies 1 000 paired measurements, plotted below:
+  </p>
+
+  <!-- reuse the same static figure you already generated -->
+  <p style="text-align:center;">
+    <pl-figure file-name="gp_cov_negpos.png"
+               directory="clientFilesQuestion"
+               width="600">
+    </pl-figure>
+  </p>
+
+  <p>
+    One region (one of the plots) shows a strong
+    <strong>positive covariance</strong>
+    between \(Y_1\) and \(Y_2\); the other shows a strong negative covariance.
+  </p>
+
+  <p><strong>Question :</strong> Which plot corresponds to the <em>positive</em> covariance?</p>
+
+  <pl-multiple-choice answers-name="pos_cov"
+                      display="block" fixed-order="false">
+    {{#params.choices}}
+      <pl-answer correct="{{correct}}">{{{text}}}</pl-answer>
+    {{/params.choices}}
+  </pl-multiple-choice>
+</pl-question-panel>

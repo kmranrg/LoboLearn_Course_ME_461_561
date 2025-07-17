@@ -1,0 +1,17 @@
+<pl-question-panel>
+  <h4>Signal Transmission in a Biological Neuron</h4>
+
+  <p>
+    Based on the diagram of a biological neuron, what is the correct <strong>direction of signal flow</strong> through the following components?
+  </p>
+  
+  <pl-figure file-name="biological_neuron.png" directory="clientFilesQuestion"></pl-figure>
+
+  <p><strong>Which of the following option represents the correct order of signal transmission?</strong></p>
+
+  <pl-multiple-choice answers-name="neuron_flow" display="block" fixed-order="false">
+    {{#params.choices}}
+      <pl-answer correct="{{correct}}">{{{text}}}</pl-answer>
+    {{/params.choices}}
+  </pl-multiple-choice>
+</pl-question-panel>

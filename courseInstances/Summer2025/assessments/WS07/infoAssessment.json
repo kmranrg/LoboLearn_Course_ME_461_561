@@ -1,0 +1,58 @@
+{
+    "uuid": "b0385ae9-49da-445f-9494-b6c6569ebeff",
+    "type": "Homework",
+    "title": "Worksheet 07",
+    "set": "Worksheet",
+    "number": "7",
+    "allowAccess": [
+    {
+      "uids": [
+        "kmranrg@unm.edu",
+        "me@kmranrg.com",
+        "2021fc04016@alumni.bits-pilani.ac.in",
+        "optimization.estimation@gmail.com",
+        "tjannala02@unm.edu",
+        "sdunk@unm.edu",
+        "bfrankland@unm.edu",
+        "tjhavens7@unm.edu",
+        "ckrug01@unm.edu",
+        "slin09@unm.edu",
+        "rlynch1@unm.edu",
+        "marquez22@unm.edu",
+        "bmartinez1@unm.edu",
+        "amata14@unm.edu",
+        "krushil16@unm.edu",
+        "dpengelly@unm.edu",
+        "lquinones1@unm.edu",
+        "csowers227@unm.edu",
+        "strejo5@unm.edu",
+        "jwilliamsunm@unm.edu",
+        "jalenyokoyama@unm.edu",
+        "teojb@unm.edu",
+        "angflowo@unm.edu",
+        "dfullerton@unm.edu",
+        "abbigail@unm.edu",
+        "dujackson@unm.edu",
+        "dawud@unm.edu",
+        "asweis1@unm.edu",
+        "jcordova96garcia@unm.edu",
+        "aeones@unm.edu",
+        "scox9@unm.edu"
+      ],
+      "startDate": "2025-07-18T23:00:00",
+      "endDate": "2025-07-25T23:00:00"
+    }
+  ],
+  "zones": [
+    {
+      "title": "Worksheet 02",
+      "questions": [
+        { "id": "W07Q01", "autoPoints": 10 },
+        { "id": "W07Q02", "autoPoints": 10 },
+        { "id": "W07Q03", "autoPoints": 10},
+        { "id": "W07Q04", "autoPoints": 10},
+        { "id": "W07Q05", "autoPoints": 10 }
+      ]
+    }
+  ]
+}

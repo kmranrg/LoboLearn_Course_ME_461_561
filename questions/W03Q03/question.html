@@ -1,0 +1,15 @@
+<pl-question-panel>
+  <h4>Understanding Neural Networks</h4>
+
+  <p>
+    Both linear regression and neural networks compute a weighted sum of inputs. However, neural networks introduce a key addition that makes them significantly more expressive.
+  </p>
+
+  <p>What is this key addition?</p>
+
+  <pl-multiple-choice answers-name="lr_to_nn_core" display="block" fixed-order="false">
+    {{#params.choices}}
+      <pl-answer correct="{{correct}}">{{{text}}}</pl-answer>
+    {{/params.choices}}
+  </pl-multiple-choice>
+</pl-question-panel>

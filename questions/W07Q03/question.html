@@ -1,0 +1,24 @@
+<pl-question-panel>
+  <h4>Core Components of a Finite Markov&nbsp;Decision&nbsp;Process (MDP)</h4>
+
+  <p>
+    A finite MDP is formally defined by the 5‑tuple
+    \( \bigl\langle \mathcal{S},\,\mathcal{A},\,T,\,r,\,\gamma \bigr\rangle \),
+    where &nbsp;\(T\) is a state‑transition probability function and
+    \(r\) is a reward function.
+  </p>
+
+  <p>
+    Which <em>single</em> element below is <strong>necessarily</strong> included
+    in this definition?
+  </p>
+
+  <pl-multiple-choice
+      answers-name="mdp_part"
+      display="block"
+      fixed-order="false">
+    {{#params.choices}}
+      <pl-answer correct="{{correct}}">{{{text}}}</pl-answer>
+    {{/params.choices}}
+  </pl-multiple-choice>
+</pl-question-panel>
